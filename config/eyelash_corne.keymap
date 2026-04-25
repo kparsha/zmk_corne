@@ -1,14 +1,11 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
-
 #define MT_TAPPING_TERM_MS 250
 #define TD_TAPPING_TERM_MS 200
 #define LT_TAPPING_TERM_MS 250
-
 #define TDLT_TD_TAPPING_TERM_MS 185
 #define TDLT_TD_TAPPING_TERM_200MS 200
 #define TDLT_TD_TAPPING_TERM_175MS 175
-
 #define TDLT_LT_TAPPING_TERM_MS 200
 #define TDLT_LT_TAPPING_TERM_225MS 225
 #define TDLT_LT_TAPPING_TERM_200MS 200
@@ -584,10 +581,10 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&kp CAPSLOCK         &kp Q             &kp W               &kp E                    &kp R           &kp T                          &kp UP                &kp Y      &kp U                  &kp I                   &kp O                &kp P                     &kp LEFT_WIN
-&kp ESC  &mt_bal DELETE A  &mt_bal LEFT_ALT S  &mt_bal LCTRL D          &mt_bal LEFT_SHIFT F        &kp G                &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt_bal RIGHT_SHIFT J  &mt_bal RCTRL K         &mt_bal RIGHT_ALT L  &mt_bal INSERT SEMICOLON  &kp GRAVE
-&kp ESC  &kp Z             &kp X               &kp C                    &kp V                       &kp B     &mo 4                &kp DOWN              &kp N      &kp M                  &td_comma_underscore    &kp DOT              &kp FSLH                  &kp GRAVE
-                                                    &lt_bal_250_50 3 ESCAPE  &lt_bal_250_50 2 BACKSPACE  &td_lt_hp_enter_esc_L1                                            &td_lt_hp_space_grave_L1   &lt_bal_250_50 2 TAB   &lt_bal_250_50 3 GRAVE
+&kp CAPSLOCK  &kp Q             &kp W               &kp E                    &kp R                       &kp T                                      &kp UP                &kp Y                   &kp U                  &kp I                   &kp O                &kp P                     &kp LEFT_WIN
+&kp ESC       &mt_bal DELETE A  &mt_bal LEFT_ALT S  &mt_bal LCTRL D          &mt_bal LEFT_SHIFT F        &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &mt_bal RIGHT_SHIFT J  &mt_bal RCTRL K         &mt_bal RIGHT_ALT L  &mt_bal INSERT SEMICOLON  &kp GRAVE
+&kp ESC       &kp Z             &kp X               &kp C                    &kp V                       &kp B                   &mo 4              &kp DOWN              &kp N                   &kp M                  &td_comma_underscore    &kp DOT              &kp FSLH                  &kp GRAVE
+                                                    &lt_bal_250_50 3 ESCAPE  &lt_bal_250_50 2 BACKSPACE  &lt_bal_250_25 1 ENTER                                           &lt_bal_250_25 1 SPACE  &lt_bal_250_50 2 TAB   &lt_bal_250_50 3 GRAVE
             >;
 
             sensor-bindings = <&tab_scroll_encoder>;
