@@ -45,8 +45,8 @@ layers:
   - {t: '`', s: '~'}
   - {t: '$$mdi:keyboard-esc$$', h: FN}
   - {t: '$$mdi:backspace$$', h: SC}
-  - '&td_lt_hp_enter_esc_L1'
-  - '&td_lt_hp_space_grave_L1'
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-tab$$', h: SC}
   - {t: '`', h: FN, s: '~'}
   NUM:
@@ -94,8 +94,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '|'
-  - '"'
-  - {t: '=', s: +}
+  - {t: '"', type: held}
+  - {t: '=', s: +, type: held alternate}
   - .
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SC:
