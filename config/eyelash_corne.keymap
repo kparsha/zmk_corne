@@ -41,6 +41,32 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
+    chosen {
+        zmk,underglow-layer-colors = <&layer_0_color, &layer_1_color &layer_2_color &layer_3_color &layer_4_color>;
+    };
+
+    layer_0_color: color_0 {
+        color = <0 0 0>; // White for QWERTY Layer
+    };
+
+    layer_1_color: color_1 {
+        color = <200 100 50>; // Blue for NUM Layer
+    };
+
+    layer_2_color: color_2 {
+        color = <180 100 50>;   // Cyan for SC Layer
+    };
+
+    layer_3_color: color_3 {
+        color = <120 100 50>; // Green for FN Layer
+    };
+
+    layer_4_color: color_4 {
+        color = <0 100 50>; // Red for KBD Layer
+    };
+};
+
+/ {
     behaviors {
         mt_hp: mt_hp {
             compatible = "zmk,behavior-hold-tap";
@@ -386,7 +412,7 @@
         td_comma_underscore: td_comma_underscore {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TDLT_TD_TAPPING_TERM_MS>;
+            tapping-term-ms = <TD_TAPPING_TERM_MS>;
             bindings = <&kp COMMA>, <&kp LS(MINUS)>;
         };
     };
@@ -434,7 +460,7 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
+            key-positions = <2 3>;
             require-prior-idle-ms = <50>;
             layers = <0>;
             timeout-ms = <30>;
@@ -442,7 +468,7 @@
 
         mac_grave {
             bindings = <&kp GRAVE>;
-            key-positions = <8 9>;
+            key-positions = <9 10>;
             require-prior-idle-ms = <50>;
             layers = <0>;
             timeout-ms = <30>;
