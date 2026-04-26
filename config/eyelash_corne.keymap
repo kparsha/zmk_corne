@@ -263,7 +263,7 @@
             flavor = "balanced";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
             quick-tap-ms = <50>;
-            bindings = <&macro>, <&kp>;
+            bindings = <&none>, <&kp>;
         };
 
         lt_bal_250_50: lt_bal_250_50 {
