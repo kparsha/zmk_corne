@@ -42,7 +42,7 @@
 
 / {
     chosen {
-        zmk,underglow-layer-colors = <&layer_0_color, &layer_1_color &layer_2_color &layer_3_color &layer_4_color>;
+        zmk,underglow-layer-colors = <&layer_0_color &layer_1_color &layer_2_color &layer_3_color &layer_4_color>;
     };
 
     layer_0_color: color_0 {
