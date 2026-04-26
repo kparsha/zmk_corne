@@ -28,6 +28,10 @@
     delay-ms = <0>;                   // 0
 };
 
+&led_strip {
+    chain-length = <21>; // Or 27 if you have underglow
+};
+
 &mmv {
     time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
