@@ -667,7 +667,7 @@
 &kp CAPSLOCK  &kp Q             &kp W               &kp E                    &kp R                       &kp T                                      &kp UP                &kp Y                   &kp U                  &kp I                   &kp O                &kp P                     &kp LEFT_WIN
 &kp ESC       &mt_bal DELETE A  &mt_bal LEFT_ALT S  &mt_bal LCTRL D          &mt_bal LEFT_SHIFT F        &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &mt_bal RIGHT_SHIFT J  &mt_bal RCTRL K         &mt_bal RIGHT_ALT L  &mt_bal INSERT SEMICOLON  &kp GRAVE
 &kp ESC       &kp Z             &kp X               &kp C                    &kp V                       &kp B                   &mo 4              &kp DOWN              &kp N                   &kp M                  &td_comma_underscore    &kp DOT              &kp FSLH                  &kp GRAVE
-                                                    &lt_bal_250_50_rgb &mo_rgb_3 ESCAPE  &lt_bal_250_50_rgb &mo_rgb_2 BACKSPACE  &lt_bal_250_25_rgb &mo_rgb_1 ENTER                                           &lt_bal_250_25_rgb &mo_rgb_1 SPACE   &lt_bal_250_25_rgb &mo_rgb_2 TAB   &lt_bal_250_25_rgb &mo_rgb_3 GRAVE
+                                                    &lt_bal_250_50_rgb &mo_rgb_3 ESCAPE  &lt_bal_250_50_rgb &mo_rgb_2 BACKSPACE  &lt_bal_250_50_rgb &mo_rgb_1 ENTER                                           &lt_bal_250_50_rgb &mo_rgb_1 SPACE   &lt_bal_250_50_rgb &mo_rgb_2 TAB   &lt_bal_250_50_rgb &mo_rgb_3 GRAVE
             >;
 
             sensor-bindings = <&tab_scroll_encoder>;
