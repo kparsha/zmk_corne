@@ -29,26 +29,26 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: Ins, s: ':'}
   - {t: '`', s: '~'}
-  - $$mdi:keyboard-esc$$
+  - {t: Sft+-, s: Sft+_}
   - Z
   - X
   - C
   - V
   - B
-  - KBD
+  - '&mo_rgb_4'
   - $$mdi:arrow-down-bold$$
   - N
   - M
   - '&td_comma_underscore'
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '`', s: '~'}
-  - {t: '$$mdi:keyboard-esc$$', h: FN}
-  - {t: '$$mdi:backspace$$', h: SC}
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: '$$mdi:keyboard-tab$$', h: SC}
-  - {t: '`', h: FN, s: '~'}
+  - {t: '''', h: '&mo_rgb_4 undefined', s: '"'}
+  - {t: '$$mdi:keyboard-esc$$', h: '&mo_rgb_3'}
+  - {t: '$$mdi:backspace$$', h: '&mo_rgb_2 undefined'}
+  - {t: '$$mdi:keyboard-return$$', h: '&mo_rgb_1'}
+  - {t: '$$mdi:keyboard-space$$', h: '&mo_rgb_1 undefined'}
+  - {t: '$$mdi:keyboard-tab$$', h: '&mo_rgb_2'}
+  - {t: '`', h: '&mo_rgb_3 undefined', s: '~'}
   NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '?'
@@ -94,8 +94,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '|'
-  - {t: '"', type: held}
-  - {t: '=', s: +, type: held alternate}
+  - '"'
+  - {t: '=', s: +}
   - .
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SC:
@@ -142,10 +142,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&tag_search'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   FN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -190,12 +190,12 @@ layers:
   - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
-  - {t: '$$mdi:mouse-right-click-outline$$', type: held alternate}
+  - $$mdi:mouse-right-click-outline$$
   KBD:
   - '&soft_off'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -231,7 +231,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
-  - {t: QWERTY, h: toggle, type: held}
+  - {t: QWERTY, h: toggle}
   - RGB BRD
   - RGB COLOR HSB(55,89,49)
   - RGB COLOR HSB(117,78,48)
