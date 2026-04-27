@@ -703,9 +703,9 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&kp CAPSLOCK  &kp Q             &kp W               &kp E                    &kp R                       &kp T                                      &kp UP                &kp Y                   &kp U                  &kp I                   &kp O                &kp P                     &kp LEFT_WIN
+&caps_word    &kp Q             &kp W               &kp E                    &kp R                       &kp T                                      &kp UP                &kp Y                   &kp U                  &kp I                   &kp O                &kp P                     &kp LEFT_WIN
 &kp ESC       &mt_bal DELETE A  &mt_bal LEFT_ALT S  &mt_bal LCTRL D          &mt_bal LEFT_SHIFT F        &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &mt_bal RIGHT_SHIFT J  &mt_bal RCTRL K         &mt_bal RIGHT_ALT L  &mt_bal INSERT SEMICOLON  &kp GRAVE
-&kp ESC       &kp Z             &kp X               &kp C                    &kp V                       &kp B                   &mo_rgb_4              &kp DOWN              &kp N                   &kp M                  &td_comma_underscore    &kp DOT              &kp FSLH                  &kp GRAVE
+&none         &kp Z             &kp X               &kp C                    &kp V                       &kp B                   &mo_rgb_4              &kp DOWN              &kp N                   &kp M                  &td_comma_underscore    &kp DOT              &kp FSLH              &lt_bal_250_25_rgb_L4 &none SINGLE_QUOTE
                                                     &lt_bal_250_25_rgb_L3 &none ESCAPE  &lt_bal_250_25_rgb_L2 &none BACKSPACE  &lt_bal_250_25_rgb_L1  &none ENTER                                           &lt_bal_250_25_rgb_L1 &none SPACE   &lt_bal_250_25_rgb_L2 &none TAB   &lt_bal_250_25_rgb_L3 &none GRAVE
             >;
 
