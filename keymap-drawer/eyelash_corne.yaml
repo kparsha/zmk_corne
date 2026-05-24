@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - LEFT WIN
-  - $$mdi:keyboard-esc$$
+  - {t: '`', s: '~'}
   - {t: A, h: '$$mdi:backspace-reverse-outline$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -28,8 +28,8 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: Ins, s: ':'}
-  - {t: '`', s: '~'}
-  - {t: Sft+-, s: Sft+_}
+  - {t: \, s: '|'}
+  - $$mdi:alpha-w-box$$
   - Z
   - X
   - C
@@ -42,13 +42,13 @@ layers:
   - '&td_comma_underscore'
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '''', h: '&mo_rgb_4 undefined', s: '"'}
-  - {t: '$$mdi:keyboard-esc$$', h: '&mo_rgb_3'}
-  - {t: '$$mdi:backspace$$', h: '&mo_rgb_2 undefined'}
-  - {t: '$$mdi:keyboard-return$$', h: '&mo_rgb_1'}
-  - {t: '$$mdi:keyboard-space$$', h: '&mo_rgb_1 undefined'}
-  - {t: '$$mdi:keyboard-tab$$', h: '&mo_rgb_2'}
-  - {t: '`', h: '&mo_rgb_3 undefined', s: '~'}
+  - {t: '''', h: KBD, s: '"'}
+  - {t: '$$mdi:keyboard-esc$$', h: FN}
+  - {t: '$$mdi:backspace$$', h: SC}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-tab$$', h: SC}
+  - {t: '`', h: FN, s: '~'}
   NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '?'
@@ -94,8 +94,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '|'
-  - '"'
-  - {t: '=', s: +}
+  - {t: '"', type: held}
+  - {t: '=', s: +, type: held alternate}
   - .
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SC:
@@ -142,10 +142,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - '&tag_search'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   FN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -190,12 +190,12 @@ layers:
   - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:mouse-right-click-outline$$', type: held alternate}
   KBD:
   - '&soft_off'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -238,7 +238,7 @@ layers:
   - RGB COLOR HSB(182,88,49)
   - RGB COLOR HSB(240,88,50)
   - RGB COLOR HSB(344,97,52)
-  - RGB COLOR HSB(271,83,50)
+  - {t: 'RGB COLOR HSB(271,83,50)', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
