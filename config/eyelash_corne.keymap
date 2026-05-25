@@ -9,6 +9,7 @@
 #define TDLT_LT_TAPPING_TERM_MS 200
 #define TDLT_LT_TAPPING_TERM_225MS 225
 #define TDLT_LT_TAPPING_TERM_200MS 200
+#define DEFAULT_QUICK_TAP_TERM 200
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -73,7 +74,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <50>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -82,7 +83,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <50>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -91,7 +92,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <50>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -100,7 +101,7 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -109,7 +110,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&cs_f>;
         };
 
@@ -118,7 +119,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&cs_d>;
         };
 
@@ -127,7 +128,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&cs_s>;
         };
 
@@ -136,7 +137,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&cs_f>;
         };
 
@@ -145,7 +146,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&cs_d>;
         };
 
@@ -154,7 +155,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&cs_s>;
         };
 
@@ -163,7 +164,7 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&cs_f>;
         };
 
@@ -172,7 +173,7 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&cs_d>;
         };
 
@@ -181,7 +182,7 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <MT_TAPPING_TERM_MS>;
-            quick-tap-ms = <20>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&kp>, <&cs_s>;
         };
 
@@ -190,7 +191,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <TDLT_LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -199,7 +200,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <TDLT_LT_TAPPING_TERM_200MS>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -208,7 +209,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <TDLT_LT_TAPPING_TERM_225MS>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -217,7 +218,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <TDLT_LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -226,7 +227,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <TDLT_LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -235,7 +236,7 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <TDLT_LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -244,7 +245,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -253,7 +254,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <25>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -262,7 +263,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <25>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo_rgb_1>, <&kp>;
         };
 
@@ -271,7 +272,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <25>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo_rgb_2>, <&kp>;
         };
 
@@ -280,7 +281,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <25>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo_rgb_3>, <&kp>;
         };
 
@@ -289,7 +290,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <25>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo_rgb_4>, <&kp>;
         };
 
@@ -298,7 +299,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <50>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -307,7 +308,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -316,7 +317,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -325,7 +326,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <50>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -334,7 +335,7 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -343,7 +344,7 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <LT_TAPPING_TERM_MS>;
-            quick-tap-ms = <50>;
+            quick-tap-ms = <DEFAULT_QUICK_TAP_TERM>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -703,9 +704,9 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&caps_word    kp Q             &kp W               &kp E                    &kp R                       &kp T                                      &kp UP                &kp Y                   &kp U                  &kp I                   &kp O                &kp P                     &kp LEFT_WIN
-&kp ESC       &mt_bal DELETE A  &mt_tp LEFT_ALT S  &mt_bal LCTRL D          &mt_bal LEFT_SHIFT F        &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &mt_bal RIGHT_SHIFT J  &mt_bal RCTRL K         &mt_tp RIGHT_ALT L  &mt_bal INSERT SEMICOLON  &kp GRAVE
-&none         &kp Z             &kp X               &kp C                    &kp V                       &kp B                   &mo_rgb_4              &kp DOWN              &kp N                   &kp M                  &td_comma_underscore    &kp DOT              &kp FSLH              &lt_bal_250_25_rgb_L4 &none SINGLE_QUOTE
+&kp ESC       &kp Q             &kp W               &kp E                    &kp R                       &kp T                                      &kp UP                &kp Y                   &kp U                  &kp I                   &kp O                &kp P                      &kp GRAVE
+&caps_word    &mt_bal DELETE A  &mt_tp LEFT_ALT S   &mt_bal LCTRL D          &mt_bal LEFT_SHIFT F        &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &mt_bal RIGHT_SHIFT J  &mt_bal RCTRL K         &mt_tp RIGHT_ALT L  &mt_bal INSERT SEMICOLON    &kp BACKSLASH
+&kp LEFT_WIN  &kp Z             &kp X               &kp C                    &kp V                       &kp B                   &mo_rgb_4              &kp DOWN              &kp N                   &kp M                  &td_comma_underscore    &kp DOT              &kp FSLH               &lt_bal_250_25_rgb_L4 &none SINGLE_QUOTE
                                                     &lt_bal_250_25_rgb_L3 &none ESCAPE  &lt_bal_250_25_rgb_L2 &none BACKSPACE  &lt_bal_250_25_rgb_L1  &none ENTER                                           &lt_bal_250_25_rgb_L1 &none SPACE   &lt_bal_250_25_rgb_L2 &none TAB   &lt_bal_250_25_rgb_L3 &none GRAVE
             >;
 
@@ -715,9 +716,9 @@
         NUM {
             display-name = "NUM";
             bindings = <
-&trans  &kp QUESTION      &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND                                            &kp K_SCROLL_UP                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT  &none
-&trans  &kp DOLLAR        &kp AT           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH                    &kp LC(LG(LEFT_ARROW))  &kp LEFT_WIN       &kp RC(RG(RIGHT))  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp MINUS    &none
-&trans  &kp SINGLE_QUOTE  &kp HASH         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp CARET          &kp C_MUTE                            &kp K_SCROLL_DOWN                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp SLASH    &none
+&trans  &kp QUESTION      &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND                                            &kp K_SCROLL_UP                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT  &trans
+&trans  &kp DOLLAR        &kp AT           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH                    &kp LC(LG(LEFT_ARROW))  &kp LEFT_WIN       &kp RC(RG(RIGHT))  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp MINUS    &trans
+&trans  &kp SINGLE_QUOTE  &kp HASH         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp CARET          &kp C_MUTE                            &kp K_SCROLL_DOWN                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp SLASH    &trans
                                            &none                 &kp PIPE               &kp DOUBLE_QUOTES                                                                              &kp EQUAL     &kp PERIOD    &none
             >;
 
@@ -727,9 +728,9 @@
         SC {
             display-name = "SC";
             bindings = <
-&none  &tmux_split  &tmux_vsplit               &tmux_scroll             &tmux_c                        &tmux_z                      &none         &none             &kp LC(LG(LEFT))  &kp RC(RG(RIGHT))  &none              &none  &none
-&none  &cs_vsplit   &mt_l1_alt_bal LEFT_ALT 0  &mt_l1_ctrl_bal LCTRL 0  &mt_l1_shift_bal LEFT_SHIFT 0  &cs_g                 &none  &none  &none  &kp LEFT          &kp DOWN          &kp UP_ARROW       &kp RIGHT          &none  &none
-&none  &none        &none                      &cs_c                    &cs_t                          &none        &none           &none         &kp LC(LS(LEFT))  &kp LS(LC(DOWN))  &kp LS(LC(UP))     &kp RS(RC(RIGHT))  &none  &none
+&trans  &tmux_split  &tmux_vsplit               &tmux_scroll             &tmux_c                        &tmux_z                      &none         &none             &kp LC(LG(LEFT))  &kp RC(RG(RIGHT))  &none              &none  &trans
+&trans  &cs_vsplit   &mt_l1_alt_bal LEFT_ALT 0  &mt_l1_ctrl_bal LCTRL 0  &mt_l1_shift_bal LEFT_SHIFT 0  &cs_g                 &none  &none  &none  &kp LEFT          &kp DOWN          &kp UP_ARROW       &kp RIGHT          &none  &trans
+&trans  &none        &none                      &cs_c                    &cs_t                          &none        &none           &none         &kp LC(LS(LEFT))  &kp LS(LC(DOWN))  &kp LS(LC(UP))     &kp RS(RC(RIGHT))  &none  &trans
                                                &none                    &none                          &tag_search                                &none             &none             &none
             >;
 
