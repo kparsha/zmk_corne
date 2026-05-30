@@ -495,20 +495,20 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
+        combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
             require-prior-idle-ms = <50>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <80>;
         };
 
-        mac_grave {
+        combo_grave {
             bindings = <&kp GRAVE>;
             key-positions = <9 10>;
             require-prior-idle-ms = <50>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <80>;
         };
     };
 
