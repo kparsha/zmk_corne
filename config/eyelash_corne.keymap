@@ -498,7 +498,7 @@
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <125>;
             layers = <0>;
             timeout-ms = <60>;
         };
@@ -506,7 +506,7 @@
         combo_grave {
             bindings = <&kp GRAVE>;
             key-positions = <9 10>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <125>;
             layers = <0>;
             timeout-ms = <60>;
         };
