@@ -498,17 +498,17 @@
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <DEFAULT_QUICK_TAP_TERM>;
             layers = <0>;
-            timeout-ms = <60>;
+            timeout-ms = <50>;
         };
 
         combo_grave {
             bindings = <&kp GRAVE>;
             key-positions = <9 10>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <DEFAULT_QUICK_TAP_TERM>;
             layers = <0>;
-            timeout-ms = <60>;
+            timeout-ms = <50>;
         };
     };
 
