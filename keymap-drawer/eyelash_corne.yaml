@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -13,8 +13,8 @@ layers:
   - I
   - O
   - P
-  - LEFT WIN
-  - $$mdi:keyboard-esc$$
+  - {t: '`', s: '~'}
+  - $$mdi:alpha-w-box$$
   - {t: A, h: '$$mdi:backspace-reverse-outline$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -28,8 +28,8 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: Ins, s: ':'}
-  - {t: '`', s: '~'}
-  - {t: Sft+-, s: Sft+_}
+  - {t: \, s: '|'}
+  - LEFT WIN
   - Z
   - X
   - C
@@ -42,13 +42,13 @@ layers:
   - '&td_comma_underscore'
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '''', h: '&mo_rgb_4 undefined', s: '"'}
-  - {t: '$$mdi:keyboard-esc$$', h: '&mo_rgb_3'}
-  - {t: '$$mdi:backspace$$', h: '&mo_rgb_2 undefined'}
-  - {t: '$$mdi:keyboard-return$$', h: '&mo_rgb_1'}
-  - {t: '$$mdi:keyboard-space$$', h: '&mo_rgb_1 undefined'}
-  - {t: '$$mdi:keyboard-tab$$', h: '&mo_rgb_2'}
-  - {t: '`', h: '&mo_rgb_3 undefined', s: '~'}
+  - '&lt_bal_250_25_rgb_L4'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&lt_bal_250_25_rgb_L3'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&lt_bal_250_25_rgb_L2'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&lt_bal_250_25_rgb_L1'
   NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '?'
@@ -62,7 +62,7 @@ layers:
   - '9'
   - '0'
   - '%'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $
   - '@'
@@ -77,7 +77,7 @@ layers:
   - '6'
   - +
   - {t: '-', s: _}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
   - '#'
@@ -91,7 +91,7 @@ layers:
   - '3'
   - '*'
   - {t: /, s: '?'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '|'
   - '"'
@@ -99,7 +99,7 @@ layers:
   - .
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SC:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&tmux_split'
   - '&tmux_vsplit'
   - '&tmux_scroll'
@@ -111,8 +111,8 @@ layers:
   - Ctl+Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&cs_vsplit'
   - {t: '&cs_s', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '&cs_d', h: '$$mdi:apple-keyboard-control$$'}
@@ -126,8 +126,8 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&cs_c'
@@ -140,7 +140,7 @@ layers:
   - Sft+Ctl+$$mdi:arrow-up-bold$$
   - Sft+Ctl+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&tag_search'
@@ -246,7 +246,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [2, 3]
+- p: [30, 31]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
 - p: [9, 10]
